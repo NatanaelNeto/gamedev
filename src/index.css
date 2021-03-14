@@ -1,13 +1,68 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  transition: all 0.25s ease;
+  z-index: 0;
+}
+
+/*
+COLOR THEME
+
+Principal     - #ff7722
+Complementar  - #00aabb
+Fundo         - #00171a
+Branco        - #ffefe5
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&family=Raleway&display=swap');
+
+body {
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #00171a;
+  color: #ffefe5;
+  font-family: 'Raleway', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* HEADER AND NAVBAR */
+
+header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  width: 100vw;
+  z-index: 2;
+}
+
+header nav {
+  width: inherit;
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  width: inherit;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffefe5;
+}
+
+header nav ul li {
+  padding: 20px 75px;
+}
+
+header nav ul li:hover a, header nav ul li.activePage a{
+  color: #ff7722;
 }
