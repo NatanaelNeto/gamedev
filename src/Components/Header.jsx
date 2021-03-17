@@ -7,9 +7,9 @@ class Header extends React.Component {
       <header>
         <nav>
           <ul>
-            <li id="menuHome"><Link to="/">Home</Link></li>
-            <li id="menuProjetos"><Link to="/projetos">Projetos</Link></li>
-            <li id="menuContato"><Link to="/contato">Contato</Link></li>
+          <Link to="/"><li id="menuHome">Home</li></Link>
+          <Link to="/projetos"><li id="menuProjetos">Projetos</li></Link>
+          <Link to="/contato"><li id="menuContato">Contato</li></Link>
           </ul>
         </nav>
       </header>

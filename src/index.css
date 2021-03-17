@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  color: #ffefe5;
   margin: 0;
   padding: 0;
   transition: all 0.25s ease;
@@ -25,17 +26,80 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+h1, h2, h3 {
+  font-family: Montserrat, sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 200;
+}
+
+strong {
+  font-weight: 900;
+}
+
+p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+* span.sh:nth-child(3n + 1) {
+  color: #ff7722;
+  font-weight: bold;
+}
+
+* span.sh:nth-child(3n + 2) {
+  color: #22ff77;
+  font-weight: bold;
+}
+
+* span.sh:nth-child(3n) {
+  color: #7722ff;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.align-column {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.align-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.section-content {
+  width: 500px;
+  margin-top: 20px;
 }
 
 /* HEADER AND NAVBAR */
 
 header {
+  background: linear-gradient(0deg, rgba(20,20,20,0) 0%, rgba(20,20,20,1) 100%);
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
-  position: absolute;
+  position: fixed;
   text-transform: uppercase;
   top: 0;
   width: 100vw;
@@ -54,8 +118,10 @@ header nav ul {
   width: inherit;
 }
 
-header nav ul li a {
+header nav ul a {
   text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.25em;
   color: #ffefe5;
 }
 
@@ -63,6 +129,46 @@ header nav ul li {
   padding: 20px 75px;
 }
 
-header nav ul li:hover a, header nav ul li.activePage a{
+header nav ul a:nth-of-type(1) li:hover{
   color: #ff7722;
+}
+
+header nav ul a:nth-of-type(2) li:hover{
+  color: #22ff77;
+}
+
+header nav ul a:nth-of-type(3) li:hover{
+  color: #7722ff;
+}
+
+
+/* HOME - Section Opening */
+
+
+.section-home-opening img {
+  width: 500px;
+  margin: -100px;
+}
+
+.section-home-opening h1 {
+  letter-spacing: 0.1em;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.section-home-opening h1 span {
+  font-weight: 200;
+}
+
+.section-home-opening p {
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+}
+
+/* HOME - Section Info */
+
+.section-home-info img {
+  width: 250px;
+  border-radius: 150px;
+  margin-right: 40px;
 }
