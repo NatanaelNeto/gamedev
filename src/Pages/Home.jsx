@@ -3,7 +3,7 @@ import React from 'react';
 import logo from '../img/logo.png';
 import fotoDev from '../img/fotoDev.jpg';
 import { jobs } from '../data';
-import Card from '../Components/Card';
+import CardJob from '../Components/CardJob';
 
 class Home extends React.Component {
   render () {
@@ -29,7 +29,7 @@ class Home extends React.Component {
           <div className="align-column">
             <h2>Experiências <strong>Profissionais</strong></h2>
             <div className="align-row">{ jobs.map((job) => (
-              <Card key={ job.id } job={ job }/>
+              <CardJob key={ job.id } job={ job }/>
             )) }</div>
           </div>
         </section>
