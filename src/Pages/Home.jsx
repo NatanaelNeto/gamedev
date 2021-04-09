@@ -25,7 +25,7 @@ class Home extends React.Component {
             </div>
           </div>
         </section>
-        <section className="section-home-projects">
+        <section className="section-home-jobs">
           <div className="align-column">
             <h2>Experiências <strong>Profissionais</strong></h2>
             <div className="align-row">{ jobs.map((job) => (
