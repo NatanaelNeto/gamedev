@@ -3,6 +3,10 @@ import flightSim from '../img/flightSim.jpg';
 import betYouGet from '../img/iBetYouGet.jpg';
 import cincoMin from '../img/cincoMin.jpg';
 
+import outrun from '../song/outrun.mp3';
+import aNewBeginning from '../song/a-new-beginning.mp3';
+import lastMission from '../song/last-mission.mp3';
+
 const jobs = [
   {
     id: 0,
@@ -105,6 +109,30 @@ const projects = [
     description: 'Board game em cartas, com tema apocalíptico',
     phase: 'GDD em contrução',
     date: 'abr/2021',
+  },
+  {
+    id: 8,
+    type: 'sound',
+    disabled: false,
+    title: 'Outrun',
+    url: outrun,
+    date: 'jan/2021',
+  },
+  {
+    id: 9,
+    type: 'sound',
+    disabled: false,
+    title: 'A New Beginning',
+    url: aNewBeginning,
+    date: 'dec/2020',
+  },
+  {
+    id: 10,
+    type: 'sound',
+    disabled: false,
+    title: 'Last Mission',
+    url: lastMission,
+    date: 'nov/2020',
   },
 ];
 

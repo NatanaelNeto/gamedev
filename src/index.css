@@ -326,6 +326,7 @@ header nav ul a:nth-of-type(3) li:hover{
   background-color: rgb(20,20,20);
   color: #ff7722;
 }
+
 .card-game h3 {
   color: #22ff77;
 }
@@ -381,4 +382,47 @@ header nav ul a:nth-of-type(3) li:hover{
 .card-project:hover .game-img {
   opacity: 0.75;
   transform: scale(1.1);
+}
+
+.card-sound h3 {
+  color: #7722ff;
+}
+
+.card-project:hover.card-sound {
+  background-color: #7722ff;
+}
+
+.card-project:hover.card-sound * {
+  color: rgb(20,20,20);
+}
+
+.card-sound {
+  justify-content: space-around;
+}
+
+.card-sound button {
+  font-size: 14px;
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  border: none;
+  margin: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(20,20,20);
+  background-color: #7722ff;
+  cursor: pointer;
+  outline: none;
+}
+
+.card-project:hover.card-sound button {
+  background-color: rgb(20,20,20);
+}
+
+.card-project:hover.card-sound button * {
+  color: #7722ff;
+}
+
+.card-project.card-js a:hover, .card-project.card-sound button:hover * {
+  color: #ffefe5;
 }
