@@ -1,0 +1,428 @@
+* {
+  box-sizing: border-box;
+  color: #ffefe5;
+  margin: 0;
+  padding: 0;
+  transition: all 0.25s ease;
+  z-index: 0;
+}
+
+/*
+COLOR THEME
+
+Principal     - #ff7722
+Complementar  - #00aabb
+Fundo         - #00171a
+Branco        - #ffefe5
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&family=Raleway&display=swap');
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #00171a;
+  color: #ffefe5;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: Montserrat, sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+strong {
+  font-weight: 900;
+}
+
+p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+* span.sh:nth-child(3n + 1) {
+  color: #ff7722;
+  font-weight: bold;
+}
+
+* span.sh:nth-child(3n + 2) {
+  color: #22ff77;
+  font-weight: bold;
+}
+
+* span.sh:nth-child(3n) {
+  color: #7722ff;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.align-column {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.align-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.section-content {
+  width: 500px;
+  margin-top: 20px;
+}
+
+/* HEADER AND NAVBAR */
+
+h1 {
+  letter-spacing: 0.1em;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+h1 span {
+  font-weight: 200;
+}
+
+header {
+  background: linear-gradient(0deg, rgba(20,20,20,0) 0%, rgba(20,20,20,1) 100%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  position: fixed;
+  text-transform: uppercase;
+  top: 0;
+  width: 100vw;
+  z-index: 2;
+}
+
+header nav {
+  width: inherit;
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  width: inherit;
+}
+
+header nav ul a {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.25em;
+  color: #ffefe5;
+}
+
+header nav ul li {
+  text-align: center;
+  padding: 20px 75px;
+}
+
+header nav ul a:nth-of-type(1) li:hover{
+  color: #ff7722;
+}
+
+header nav ul a:nth-of-type(2) li:hover{
+  color: #22ff77;
+}
+
+header nav ul a:nth-of-type(3) li:hover{
+  color: #7722ff;
+}
+
+/* HOME - Section Op ening */
+
+.section-home-opening {
+  height: 100vh;
+  margin-bottom: 0;
+}
+
+.section-home-opening img {
+  width: 500px;
+  margin: -100px;
+}
+
+.section-home-opening p {
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+}
+
+/* HOME - Section Info */
+
+.section-home-info img {
+  border-radius: 150px;
+  margin-right: 40px;
+  width: 250px;
+}
+
+/* HOME - Section Jobs */
+
+.section-home-jobs h2 {
+  text-align: center;
+}
+
+.card {
+  background-color: rgba(0,0,0,0.25);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 300px;
+  margin: 10px;
+  padding: 15px;
+  width: 300px;
+}
+
+.card:nth-of-type(3n + 1) h3{
+  color: #ff7722;
+}
+
+.card:nth-of-type(3n + 2) h3{
+  color: #22ff77;
+}
+
+.card:nth-of-type(3n) h3{
+  color: #7722ff;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+}
+
+.card .card-description {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: rgba(255, 239, 229, 0.5);
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card ul li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card .card-period {
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(255, 239, 229, 0.5);
+}
+
+.section-opening {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PROJETOS */
+
+.project-opening {
+  margin-bottom: -100px;
+}
+
+.project-container {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.project-p {
+  max-width: 50vw;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.project-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.project-title:nth-of-type(1) {
+  color: #ff7722;
+}
+.project-title:nth-of-type(2) {
+  color: #22ff77;
+}
+.project-title:nth-of-type(3) {
+  color: #7722ff;
+}
+
+.card-project {
+  background-color: rgba(0,0,0,0.25);
+  width: 300px;
+  height: 200px;
+  padding: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: space-between;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-project h3 {
+  font-size: 25px;
+}
+
+.card-js h3 {
+  color: #ff7722;
+}
+
+.card-project:hover.card-js {
+  background-color: #ff7722;
+}
+
+.card-project:hover.card-js * {
+  color: rgb(20,20,20);
+}
+
+.card-js a {
+  font-size: 14px;
+  padding: 5px 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(20,20,20);
+  background-color: #ff7722;
+}
+
+.card-project:hover.card-js a {
+  background-color: rgb(20,20,20);
+  color: #ff7722;
+}
+
+.card-game h3 {
+  color: #22ff77;
+}
+
+.card-project:hover.card-game {
+  background-color: rgba(34, 255, 119, 0.75);
+}
+
+.card-project:hover.card-game .game-content{
+  opacity: 0;
+}
+
+/*
+.card-game button {
+  font-size: 14px;
+  outline: none;
+  border: none;
+  padding: 5px 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(20,20,20);
+  background-color: #22ff77;
+}
+
+.card-project:hover.card-game button {
+  background-color: rgb(20,20,20);
+  color: #22ff77;
+}
+*/
+
+.card-project .game-content {
+  z-index: 1;
+  display: flex;
+  height: inherit;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-project .game-content .span {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.card-project .game-img {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  height: inherit;
+  opacity: 0.1;
+}
+.card-project:hover .game-img {
+  opacity: 0.75;
+  transform: scale(1.1);
+}
+
+.card-sound h3 {
+  color: #7722ff;
+}
+
+.card-project:hover.card-sound {
+  background-color: #7722ff;
+}
+
+.card-project:hover.card-sound * {
+  color: rgb(20,20,20);
+}
+
+.card-sound {
+  justify-content: space-around;
+}
+
+.card-sound button {
+  font-size: 14px;
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  border: none;
+  margin: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(20,20,20);
+  background-color: #7722ff;
+  cursor: pointer;
+  outline: none;
+}
+
+.card-project:hover.card-sound button {
+  background-color: rgb(20,20,20);
+}
+
+.card-project:hover.card-sound button * {
+  color: #7722ff;
+}
+
+.card-project.card-js a:hover, .card-project.card-sound button:hover * {
+  color: #ffefe5;
+}
