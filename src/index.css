@@ -426,3 +426,17 @@ header nav ul a:nth-of-type(3) li:hover{
 .card-project.card-js a:hover, .card-project.card-sound button:hover * {
   color: #ffefe5;
 }
+
+.contato-section {
+  margin-bottom: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato-content {
+  padding: 25px;
+  border-left: solid 3px #ffefe5;
+  margin-left: 25px;
+}
