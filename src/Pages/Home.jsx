@@ -4,6 +4,7 @@ import logo from '../img/logo.png';
 import fotoDev from '../img/fotoDev.jpg';
 import { jobs } from '../data';
 import CardJob from '../Components/CardJob';
+import Footer from '../Components/Footer';
 
 class Home extends React.Component {
   render () {
@@ -62,6 +63,7 @@ class Home extends React.Component {
             <li>Board Games</li>
           </ul>
         </section>
+        <Footer />
       </div>
     );
   }

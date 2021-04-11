@@ -24,6 +24,7 @@ body {
   background-color: #00171a;
   color: #ffefe5;
   font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 
 h1, h2, h3 {
@@ -434,6 +435,7 @@ header nav ul a:nth-of-type(3) li:hover{
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  height: 90vh;
 }
 
 .contato-content {
@@ -527,6 +529,9 @@ header nav ul a:nth-of-type(3) li:hover{
   .section-home-opening h1 {
     font-size: 25px;
   }
+  .section-home-skills {
+    text-align: center;
+  }
   .align-column {
     max-width: 100vw;
   }
@@ -597,4 +602,24 @@ header nav ul a:nth-of-type(3) li:hover{
   padding: 5px 25px;
   border: solid 1px #ffefe5;
   margin: 5px;
+}
+
+footer {
+  background-color: #ffefe5;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+footer * {
+  color: #00171a;
+}
+footer span {
+  font-style: italic;
+  font-weight: bold;
+}
+footer .madeBy {
+  margin-top: 20px;
 }

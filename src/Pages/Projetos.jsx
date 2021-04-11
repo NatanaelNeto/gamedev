@@ -1,5 +1,6 @@
 import React from 'react';
 import CardProject from '../Components/CardProject';
+import Footer from '../Components/Footer';
 import { projects } from '../data';
 
 class Projetos extends React.Component {
@@ -30,6 +31,7 @@ class Projetos extends React.Component {
             <CardProject project={ p } />
           ))}
         </section>
+        <Footer />
       </div>
     );
   }

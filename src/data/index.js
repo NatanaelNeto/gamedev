@@ -136,4 +136,27 @@ const projects = [
   },
 ];
 
-export { jobs, projects };
+const versiculos = [
+  {
+    id: 0,
+    ref: '1ªCo 15:58',
+    versiculo: 'Portanto, meus amados irmãos, mantenham-se firmes, e que nada os abale. Sejam sempre dedicados à obra do Senhor, pois vocês sabem que, no Senhor, o trabalho de vocês não será inútil',
+  },
+  {
+    id: 1,
+    ref: '1ªTm 4:12',
+    versiculo: 'Ninguém o despreze pelo fato de você ser jovem, mas seja um exemplo para os fiéis na palavra, no procedimento, no amor, na fé e na pureza',
+  },
+  {
+    id: 2,
+    ref: 'Cl 3:23',
+    versiculo: 'Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens',
+  },
+  {
+    id: 3,
+    ref: 'Mt 19:14',
+    versiculo: 'Então disse Jesus: "Deixem vir a mim as crianças e não as impeçam; pois o Reino dos céus pertence aos que são semelhantes a elas"',
+  },
+];
+
+export { jobs, projects, versiculos };
