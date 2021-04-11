@@ -532,6 +532,7 @@ header nav ul a:nth-of-type(3) li:hover{
   }
   .align-column h2 {
     max-width: 100vw;
+    padding: 10px;
     text-align: center;
   }
   .section-content {
