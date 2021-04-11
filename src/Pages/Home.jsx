@@ -2,7 +2,7 @@ import React from 'react';
 
 import logo from '../img/logo.png';
 import fotoDev from '../img/fotoDev.jpg';
-import { jobs } from '../data';
+import { jobs, skills, hotpoints } from '../data';
 import CardJob from '../Components/CardJob';
 import Footer from '../Components/Footer';
 
@@ -29,19 +29,7 @@ class Home extends React.Component {
         <section className="section-home-skills">
           <h2><strong>Skills</strong></h2>
           <ul>
-            <li>Web Design</li>
-            <li>JavaScript</li>
-            <li>Jest</li>
-            <li>Cypress</li>
-            <li>React</li>
-            <li>Vue.js</li>
-            <li>Unity</li>
-            <li>C#</li>
-            <li>Game Design</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Premiere</li>
-            <li>Educação Infantil</li>
+            { skills.map((skill) => <li>{ skill }</li>) }
           </ul>
         </section>
         <section className="section-home-jobs">
@@ -55,12 +43,7 @@ class Home extends React.Component {
         <section className="section-home-skills">
           <h2>Pontos de <strong>Interesse</strong></h2>
           <ul>
-            <li>Jogos Digitais</li>
-            <li>Desenvolvimento Web</li>
-            <li>Web Design</li>
-            <li>Educação</li>
-            <li>Criatividade e Inovação</li>
-            <li>Board Games</li>
+            { hotpoints.map((hotpoint) => <li>{ hotpoint }</li>) }
           </ul>
         </section>
         <Footer />

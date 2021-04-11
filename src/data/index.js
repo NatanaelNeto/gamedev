@@ -159,4 +159,29 @@ const versiculos = [
   },
 ];
 
-export { jobs, projects, versiculos };
+const skills = [
+  'Web Design',
+  'JavaScript',
+  'Jest',
+  'Cypress',
+  'React',
+  'Vue.js',
+  'Unity',
+  'C#',
+  'Game Design',
+  'Photoshop',
+  'Illustrator',
+  'Premiere',
+  'Educação Infantil',
+];
+
+const hotpoints = [
+  'Jogos Digitais',
+  'Desenvolvimento Web',
+  'Web Design',
+  'Educação',
+  'Criatividade e Inovação',
+  'Board Games',
+];
+
+export { jobs, projects, versiculos, skills, hotpoints };
