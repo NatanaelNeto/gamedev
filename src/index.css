@@ -577,3 +577,24 @@ header nav ul a:nth-of-type(3) li:hover{
     max-height: none;
   }
 }
+
+.section-home-skills {
+  display: flex;
+  flex-flow: column;
+  max-width: 75vw;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.section-home-skills ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+.section-home-skills ul li {
+  padding: 5px 25px;
+  border: solid 1px #ffefe5;
+  margin: 5px;
+}

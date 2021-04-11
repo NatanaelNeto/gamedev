@@ -25,6 +25,24 @@ class Home extends React.Component {
             </div>
           </div>
         </section>
+        <section className="section-home-skills">
+          <h2><strong>Skills</strong></h2>
+          <ul>
+            <li>Web Design</li>
+            <li>JavaScript</li>
+            <li>Jest</li>
+            <li>Cypress</li>
+            <li>React</li>
+            <li>Vue.js</li>
+            <li>Unity</li>
+            <li>C#</li>
+            <li>Game Design</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Premiere</li>
+            <li>Educação Infantil</li>
+          </ul>
+        </section>
         <section className="section-home-jobs">
           <div className="align-column">
             <h2>Experiências <strong>Profissionais</strong></h2>
