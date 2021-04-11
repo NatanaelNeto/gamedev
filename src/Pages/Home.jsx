@@ -51,6 +51,17 @@ class Home extends React.Component {
             )) }</div>
           </div>
         </section>
+        <section className="section-home-skills">
+          <h2>Pontos de <strong>Interesse</strong></h2>
+          <ul>
+            <li>Jogos Digitais</li>
+            <li>Desenvolvimento Web</li>
+            <li>Web Design</li>
+            <li>Educação</li>
+            <li>Criatividade e Inovação</li>
+            <li>Board Games</li>
+          </ul>
+        </section>
       </div>
     );
   }
