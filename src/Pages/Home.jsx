@@ -29,21 +29,21 @@ class Home extends React.Component {
         <section className="section-home-skills">
           <h2><strong>Skills</strong></h2>
           <ul>
-            { skills.map((skill) => <li>{ skill }</li>) }
+            { skills.map((skill, i) => <li key={ i }>{ skill }</li>) }
           </ul>
         </section>
         <section className="section-home-jobs">
           <div className="align-column">
             <h2>Experiências <strong>Profissionais</strong></h2>
             <div className="align-row">{ jobs.map((job) => (
-              <CardJob key={ job.id } job={ job }/>
+              <CardJob key={ job.id } job={ job } />
             )) }</div>
           </div>
         </section>
         <section className="section-home-skills">
           <h2>Pontos de <strong>Interesse</strong></h2>
           <ul>
-            { hotpoints.map((hotpoint) => <li>{ hotpoint }</li>) }
+            { hotpoints.map((hotpoint, i) => <li key={ i }>{ hotpoint }</li>) }
           </ul>
         </section>
         <Footer />
