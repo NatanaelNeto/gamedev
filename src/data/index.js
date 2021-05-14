@@ -97,7 +97,7 @@ const projects = [
     title: 'I Bet You Get',
     url: betYouGet,
     description: 'Jogo puzzle para computador. Use sua estratégia sabiamente para pontuar',
-    phase: 'em produção',
+    phase: 'finalizado',
     date: 'jan/2021',
   },
   {
@@ -133,6 +133,16 @@ const projects = [
     title: 'Last Mission',
     url: lastMission,
     date: 'nov/2020',
+  },
+  {
+    id: 11,
+    type: 'game',
+    disabled: false,
+    title: 'AREPO',
+    url: '',
+    description: 'Jogo puzzle que usa o espaço-tempo para chegar ao objetivo',
+    phase: 'Pré-alpha disponível em breve',
+    date: 'mai/2021',
   },
 ];
 
